@@ -1,0 +1,47 @@
+---
+description: Development rules for the Random Quote Generator project.
+globs: **/*.js", "**/*.tsx", "**/*.md
+---
+# Random Quote Generator Development Rules
+
+## 1. Scope & Feature Alignment
+- **Adhere to the PRD.** All features and design decisions must align with the "Product Requirements Document" (PRD) and its focus on displaying random quotes.
+- **Minimize Feature Creep.** Avoid adding extra functionalities beyond those explicitly stated in the PRD (e.g., no social sharing, user login, or quote favoriting) unless approved.
+- **Focus on Core Functionality.** Ensure all code or content is aligned with fetching, displaying, and replacing quotes efficiently.
+
+## 2. Code Organization & Best Practices
+- **Use the Approved Tech Stack:**
+  - **Frontend:** React with Tailwind CSS
+  - **Quote Source:** Zen Quotes API
+  - **Deployment:** GitHub Pages
+- **Write Modular, Clean Code.** Keep components simple, single-responsibility, and easy to maintain.
+- **Follow Standard Conventions.** Maintain consistent naming, linting, and formatting in JavaScript/TypeScript.
+- **Security & Privacy.** Do not expose sensitive data in logs or code; follow best practices when making API requests.
+
+## 3. User Experience & UI Constraints
+- **Minimalist UI.** Keep the design simple, focusing on readability and usability.
+- **Clear Workflow.** The process of generating and displaying a new quote should be seamless and require minimal user actions.
+- **Responsiveness.** Ensure the UI is mobile-friendly and works well on different screen sizes.
+- **Smooth Transitions.** Apply subtle UI transitions when switching quotes to enhance user experience.
+
+## 4. Data Management & API Integration
+- **Accurate Data Handling.** Ensure quotes are displayed correctly without duplication or errors.
+- **Quote Sources:**
+  - Start with a **local JSON file** to ensure the app works offline.
+  - Later, implement API integration with **Zen Quotes API** for live quote fetching.
+- **Loading State.** Provide visual feedback (e.g., a loading spinner or fade effect) when fetching a new quote.
+
+## 5. Collaboration & Iterations
+- **Comment & Document.** Add inline comments and high-level documentation for key components and API integration.
+- **Regular Checkpoints.** Before adding new features, confirm they align with the PRD.
+- **Testing.** Ensure basic testing of quote fetching and UI interactions for smooth user experience.
+
+## 6. Future Expansion Awareness
+- **API Handling.** Ensure flexibility in the API request method to allow future API sources.
+- **Scalability.** Structure components and state management to support additional features if needed later.
+
+## 7. AI Content & Response Requirements
+- **Stay Within the PRD.** If asked for additional features not in the PRD, request approval before implementing.
+- **No Speculative Features.** Avoid implementing speculative functionalities that are not explicitly mentioned in the PRD.
+- **Minimal Overhead.** Keep generated code concise, focusing on the solution rather than unnecessary complexity.
+- **Prompt Confirmation.** If the AI is unsure about a design decision, it should seek clarification rather than making assumptions.
