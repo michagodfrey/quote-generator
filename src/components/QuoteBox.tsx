@@ -45,7 +45,7 @@ function QuoteBox() {
         </div>
         <button
           onClick={generateQuote}
-          className="mt-6 w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition-colors"
+          className="mt-6 w-full bg-blue-500 hover:bg-blue-600 font-semibold py-2 px-4 rounded transition-colors"
           disabled={isLoading}
         >
           Generate Quote
@@ -53,8 +53,5 @@ function QuoteBox() {
       </div>
     );
   };
-
-
-
 
 export default QuoteBox;

@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tailwind": "npx @tailwindcss/cli -i ./src/index.css -o ./src/output.css --watch"
   },
   "dependencies": {
+    "@tailwindcss/cli": "^4.0.7",
+    "@tailwindcss/vite": "^4.0.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
